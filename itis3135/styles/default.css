@@ -1,0 +1,16 @@
+body {
+    background-color:#DEE2FF;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+}
+
+a {
+    color: #A51188;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F5A7B3;
+    text-decoration: line;
+}
+
