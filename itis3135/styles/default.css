@@ -1,9 +1,91 @@
+/* General body styling */
 body {
-    background-color:#DEE2FF;
+    background-color: #DEE2FF;
     text-align: center;
     font-family: "Gill Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #F5A7B3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #A51188;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #A51188;
+}
+
+section.main-section {
+    margin: 20px 0;
+}
+
+section.main-section h3 {
+    font-size: 1.8em;
+    color: #A51188;
+}
+
+section.main-section p {
+    color: #333;
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+section.main-section article {
+    text-align: left;
+    margin: 10px auto;
+    max-width: 800px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+figure {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+figure figcaption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Links styling */
 a {
     color: #A51188;
     text-decoration: none;
@@ -11,6 +93,43 @@ a {
 
 a:hover {
     color: #F5A7B3;
-    text-decoration: line;
+    text-decoration: underline;
 }
 
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer nav a {
+    color: #F5A7B3;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #A51188;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    section.main-section {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        font-size: 0.9em;
+    }
+
+    section.main-section article {
+        max-width: 100%;
+    }
+}
