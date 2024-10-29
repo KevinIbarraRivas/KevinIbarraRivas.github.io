@@ -18,7 +18,7 @@
             text-align: center;
             padding: 20px 0;
         }
-        header h1 {
+        h1 {
             margin: 0;
             font-size: 2.5em;
             letter-spacing: 2px;
@@ -54,7 +54,7 @@
             display: none;
             margin-bottom: 40px;
         }
-        section.active {
+        .active {
             display: block;
         }
         h2 {
@@ -131,7 +131,7 @@
                 margin: 0 5px;
                 font-size: 1em;
             }
-            header h1 {
+            h1 {
                 font-size: 2em;
             }
         }
@@ -146,25 +146,35 @@
         }
         document.addEventListener('DOMContentLoaded', () => {
             showSection('what');
+
+            // Add event listeners to navigation links
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach((link) => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    const sectionId = link.getAttribute('href').substring(1);
+                    showSection(sectionId);
+                });
+            });
         });
     </script>
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>Legos and Building Sets</h1>
         <nav>
-            <a href="#what" onclick="showSection('what')">What</a>
-            <a href="#who" onclick="showSection('who')">Who</a>
-            <a href="#when" onclick="showSection('when')">When</a>
-            <a href="#where" onclick="showSection('where')">Where</a>
-            <a href="#how" onclick="showSection('how')">How</a>
-            <a href="#why" onclick="showSection('why')">Why</a>
-            <a href="#ai" onclick="showSection('ai')">AI Prompts</a>
+            <a href="#what">What</a>
+            <a href="#who">Who</a>
+            <a href="#when">When</a>
+            <a href="#where">Where</a>
+            <a href="#how">How</a>
+            <a href="#why">Why</a>
+            <a href="#ai">AI Prompts</a>
         </nav>
     </header>
 
     <main>
+        <!-- What Section -->
         <section id="what" class="active">
             <h2>What is Lego Building?</h2>
             <p>Lego building is an engaging activity that allows individuals to construct models using interlocking plastic bricks. These bricks can be assembled and connected in myriad ways to build objects such as vehicles, buildings, and even functioning robots. The versatility of Lego bricks makes them a powerful tool for creativity and imagination.</p>
@@ -194,6 +204,7 @@
             </figure>
         </section>
 
+        <!-- Who Section -->
         <section id="who">
             <h2>Who Enjoys Lego Building?</h2>
             <p>Lego building is a universal hobby enjoyed by people of all ages and backgrounds. From young children developing motor skills to adults seeking a creative outlet, Lego has a broad appeal.</p>
@@ -210,6 +221,7 @@
             </figure>
         </section>
 
+        <!-- When Section -->
         <section id="when">
             <h2>When to Enjoy Lego Building</h2>
             <p>Lego building is a flexible hobby that fits into any schedule:</p>
@@ -226,6 +238,7 @@
             </figure>
         </section>
 
+        <!-- Where Section -->
         <section id="where">
             <h2>Where to Build and Explore Lego</h2>
             <p>Lego building can take place in various environments:</p>
@@ -243,6 +256,7 @@
             </figure>
         </section>
 
+        <!-- How Section -->
         <section id="how">
             <h2>How to Start Building with Lego</h2>
             <h3>1. Gather Your Materials</h3>
@@ -260,6 +274,7 @@
             </figure>
         </section>
 
+        <!-- Why Section -->
         <section id="why">
             <h2>Why Engage in Lego Building?</h2>
             <p>Lego building is more than just assembling bricks; it's a way to develop valuable skills and enjoy numerous benefits:</p>
@@ -277,6 +292,7 @@
             </figure>
         </section>
 
+        <!-- AI Prompts Section -->
         <section id="ai">
             <h2>AI Prompts Used</h2>
             <p>The following AI prompts were used to generate content for this website:</p>
