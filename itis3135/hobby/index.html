@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legos and Building Sets</title>
+    <style>
+        /* Embedded Styles */
+        html {
+            background-color: #FBE4C6;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+        }
+        header, footer {
+            background-color: #FF8C00;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #FF8C00;
+        }
+        section {
+            display: none;
+            margin: 20px;
+        }
+        .active {
+            display: block;
+        }
+        figure {
+            text-align: center;
+        }
+        figcaption {
+            font-style: italic;
+            color: #555;
+        }
+        footer {
+            font-size: 0.9em;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Legos and Building Sets</h1>
+        <nav>
+            <a href="#who" onclick="showSection('who')">Who</a>
+            <a href="#what" onclick="showSection('what')">What</a>
+            <a href="#when" onclick="showSection('when')">When</a>
+            <a href="#where" onclick="showSection('where')">Where</a>
+            <a href="#how" onclick="showSection('how')">How</a>
+            <a href="#why" onclick="showSection('why')">Why</a>
+            <a href="#ai-prompts" onclick="showSection('ai-prompts')">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Who Section -->
+        <section id="who">
+            <h2>Who Enjoys Lego Building?</h2>
+            <p>Lego building is enjoyed by people of all ages, from children exploring creativity to adults who love intricate models. Lego is for people of all ages and genders.</p>
+            <ul>
+                <li>Children: Enhances creativity and motor skills. Allows them to build what they can imagine.</li>
+                <li>Adults: Relaxes and provides a fun challenge. Allows them to create sets for their favorite franchises and display them.</li>
+            </ul>
+            <figure>
+                <img src="images/people_enjoying_lego.jpg" alt="People of various ages enjoying Lego building together">
+                <figcaption>People of various ages enjoying Lego building together.</figcaption>
+                <p><em>This image was generated using the prompt: "A photorealistic image of people of various ages enjoying Lego building together at a table."</em></p>
+            </figure>
+        </section>
+
+        <!-- What Section (Home Page) -->
+        <section id="what" class="active">
+            <h2>What is Lego Building?</h2>
+            <p>Lego building is more than just a pastime—it's an art form, a tool for creativity, and a means to bring imagination to life. From iconic architectural models to whimsical fantasy worlds, Lego building offers endless possibilities to create, design, and explore. Builders of all ages find joy in constructing sets or crafting original creations that push the boundaries of what’s possible.</p>
+            <p>With a wide variety of themes, such as cities, space, fantasy, and engineering, Lego bricks allow for self-expression, storytelling, and technical skills development. Whether you’re a child stacking blocks for the first time or an adult creating complex structures, Lego building is a hobby that combines play, learning, and innovation in a fun and engaging way.</p>
+            <figure>
+                <img src="images/lego_image_1.jpg" alt="Colorful Lego pieces">
+                <figcaption>Various Lego bricks for endless building possibilities</figcaption>
+                <p><em>This image was generated using the prompt: "A bunch of colorful lego bricks"</em></p>
+            </figure>
+        </section>
+
+        <!-- When Section -->
+        <section id="when">
+            <h2>When to Build with Legos</h2>
+            <p>Lego building can be enjoyed year-round. You just need some free time and appropriate space and you can get started on creating. Many enthusiasts find it a perfect winter hobby, building cozy creations indoors.</p>
+            <p>However, summer is also a popular time for outdoor Lego exhibitions and events.</p>
+            <figure>
+                <img src="images/building_legos_seasons_photorealistic.jpg" alt="Seasonal Lego building">
+                <figcaption>Building Lego sets during different seasons</figcaption>
+                <p><em>This image was generated using the prompt: "building legos in different seasons"</em></p>
+            </figure>
+        </section>
+
+        <!-- Where Section -->
+        <section id="where">
+            <h2>Where to Build Legos</h2>
+            <p>Lego building can be enjoyed anywhere, but many prefer a dedicated space like a table or playroom to keep pieces organized.</p>
+            <ul>
+                <li>Home</li>
+                <li>Community Centers</li>
+                <li>Lego Stores</li>
+            </ul>
+            <figure>
+                <img src="images/building_legos_community_center.jpg" alt="Lego building at a Community Center">
+                <figcaption>Example of a setup for Lego building</figcaption>
+                <p><em>This image was generated using the prompt: "photorealistic building legos at a community center"</em></p>
+            </figure>
+        </section>
+
+        <!-- How Section -->
+        <section id="how">
+            <h2>How to Build with Lego</h2>
+            <h3>Getting Started: Organize Your Space</h3>
+            <p>Before beginning a Lego project, it's helpful to have a designated space where you can comfortably work and keep your pieces organized. A table with small bins or trays is ideal, allowing you to sort pieces by color, size, or type for easy access.</p>
+        
+            <h3>Step 1: Choose Your Set or Build Idea</h3>
+            <p>If you're using a Lego set, start by carefully reviewing the instructions to familiarize yourself with the build process. For custom creations, sketch out your idea or gather inspiration from online communities to give your project a direction.</p>
+        
+            <figure>
+                <img src="images/building_legos_step_by_step.jpg" alt="Hands building a Lego structure">
+                <figcaption>Hands-on Lego building experience with organized pieces</figcaption>
+
+            </figure>
+        
+            <h3>Step 2: Build in Layers</h3>
+            <p>Building in layers is a common technique for larger structures. Start with the base, ensuring it’s strong and stable, then gradually work upwards. This method helps avoid instability and lets you focus on details layer by layer.</p>
+        
+            <h3>Step 3: Customize and Add Details</h3>
+            <p>Once the main structure is complete, customize your build by adding small details that bring it to life. Add textures, colors, and unique features to make your creation stand out.</p>
+        
+            <h3>Step 4: Display or Play!</h3>
+            <p>Once finished, decide if you want to display your build as a decoration or use it as part of a larger play setup. Many builders enjoy creating entire Lego worlds by combining different builds into one expansive scene.</p>
+        </section>
+        
+
+        <!-- Why Section -->
+        <section id="why">
+            <h2>Why Lego Building?</h2>
+            <p>Lego building enhances creativity, problem-solving, and fine motor skills. It's a fun, engaging hobby for all ages.</p>
+            <ul>
+                <li>Boosts creativity</li>
+                <li>Improves motor skills</li>
+                <li>Great stress-reliever</li>
+            </ul>
+            <figure>
+                <img src="images/why.jpg" alt="Benefits of Lego building">
+                <figcaption>Benefits of engaging in Lego building</figcaption>
+            </figure>
+        </section>
+
+        <!-- AI Prompts Section -->
+        <section id="ai-prompts">
+            <h2>AI Prompts Used</h2>
+            <ul>
+                <li>"Colorful Lego bricks arranged in a creative and fun way, with different shapes and sizes scattered on a table."</li>
+                <li>"Popular Lego building sets including castles, spaceships, and iconic architecture displayed creatively."</li>
+                <li>"Building Lego creations step by step, focusing on hands building a complex Lego structure."</li>
+            </ul>
+            <figure>
+                <img src="images/ai_legos.jpg" alt="AI-generated Lego image">
+                <figcaption>AI-generated representation of Lego building</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed by KIR Inc | <a href="https://www.yourdesignfirm.com" target="_blank" style="color:#fff;">www.yourdesignfirm.com</a></p>
+    </footer>
+
+    <script>
+        // JavaScript to show and hide sections based on navigation clicks
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach((section) => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
