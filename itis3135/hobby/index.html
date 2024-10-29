@@ -2,200 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legos and Building Sets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         /* Embedded Styles */
-        html {
-            background-color: #FBE4C6;
-            font-family: Arial, sans-serif;
-        }
         body {
             margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #daefd9; /* Blue/Green Mist */
+            color: #608074; /* Green Trees */
         }
         header, footer {
-            background-color: #FF8C00;
+            background-color: #de493c; /* Red Branches */
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
         }
-        h1, h2, h3 {
-            color: #333;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
         }
         nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         nav a {
-            color: #333;
+            color: #fff;
+            margin: 0 15px;
             font-weight: bold;
             text-decoration: none;
+            font-size: 1.1em;
         }
         nav a:hover {
+            color: #daefd9; /* Blue/Green Mist */
             text-decoration: underline;
-            color: #FF8C00;
+        }
+        nav a::after {
+            content: ' ⦁ ';
+            color: #daefd9; /* Blue/Green Mist */
+        }
+        nav a:last-child::after {
+            content: '';
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #daefd9; /* Blue/Green Mist */
         }
         section {
             display: none;
-            margin: 20px;
+            margin-bottom: 40px;
         }
-        .active {
+        section.active {
             display: block;
         }
-        figure {
-            text-align: center;
+        h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #608074; /* Green Trees */
+            padding-bottom: 10px;
         }
-        figcaption {
-            font-style: italic;
-            color: #555;
+        h3 {
+            font-size: 1.5em;
+            margin-top: 30px;
+            color: #de493c; /* Red Branches */
         }
-        footer {
-            font-size: 0.9em;
+        p {
+            line-height: 1.6em;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+            list-style-type: square;
+        }
+        li {
+            margin-bottom: 10px;
         }
         table {
             width: 100%;
-            margin-top: 20px;
             border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #608074; /* Green Trees */
         }
         th, td {
             padding: 10px;
-            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #de493c; /* Red Branches */
+            color: #fff;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #de493c; /* Red Branches */
+        }
+        figure {
+            margin: 20px 0;
             text-align: center;
         }
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid #608074; /* Green Trees */
+        }
+        figcaption {
+            font-style: italic;
+            color: #608074; /* Green Trees */
+            margin-top: 10px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #daefd9; /* Blue/Green Mist */
+            text-decoration: underline;
+        }
+        .validation-buttons {
+            margin-top: 10px;
+        }
+        .validation-buttons a {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #608074; /* Green Trees */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .validation-buttons a:hover {
+            background-color: #de493c; /* Red Branches */
+            color: #fff;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                margin: 0 10px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+        }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Legos and Building Sets</h1>
-        <nav>
-            <a href="#who" onclick="showSection('who')">Who</a>
-            <a href="#what" onclick="showSection('what')">What</a>
-            <a href="#when" onclick="showSection('when')">When</a>
-            <a href="#where" onclick="showSection('where')">Where</a>
-            <a href="#how" onclick="showSection('how')">How</a>
-            <a href="#why" onclick="showSection('why')">Why</a>
-            <a href="#ai-prompts" onclick="showSection('ai-prompts')">AI Prompts</a>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Who Section -->
-        <section id="who">
-            <h2>Who Enjoys Lego Building?</h2>
-            <p>Lego building is enjoyed by people of all ages, from children exploring creativity to adults who love intricate models. Lego is for people of all ages and genders.</p>
-            <ul>
-                <li>Children: Enhances creativity and motor skills. Allows them to build what they can imagine.</li>
-                <li>Adults: Relaxes and provides a fun challenge. Allows them to create sets for their favorite franchises and display them.</li>
-            </ul>
-            <figure>
-                <img src="images/people_enjoying_lego.jpg" alt="People of various ages enjoying Lego building together">
-                <figcaption>People of various ages enjoying Lego building together.</figcaption>
-                <p><em>This image was generated using the prompt: "A photorealistic image of people of various ages enjoying Lego building together at a table."</em></p>
-            </figure>
-        </section>
-
-        <!-- What Section (Home Page) -->
-        <section id="what" class="active">
-            <h2>What is Lego Building?</h2>
-            <p>Lego building is more than just a pastime—it's an art form, a tool for creativity, and a means to bring imagination to life. From iconic architectural models to whimsical fantasy worlds, Lego building offers endless possibilities to create, design, and explore. Builders of all ages find joy in constructing sets or crafting original creations that push the boundaries of what’s possible.</p>
-            <p>With a wide variety of themes, such as cities, space, fantasy, and engineering, Lego bricks allow for self-expression, storytelling, and technical skills development. Whether you’re a child stacking blocks for the first time or an adult creating complex structures, Lego building is a hobby that combines play, learning, and innovation in a fun and engaging way.</p>
-            <figure>
-                <img src="images/lego_image_1.jpg" alt="Colorful Lego pieces">
-                <figcaption>Various Lego bricks for endless building possibilities</figcaption>
-                <p><em>This image was generated using the prompt: "A bunch of colorful lego bricks"</em></p>
-            </figure>
-        </section>
-
-        <!-- When Section -->
-        <section id="when">
-            <h2>When to Build with Legos</h2>
-            <p>Lego building can be enjoyed year-round. You just need some free time and appropriate space and you can get started on creating. Many enthusiasts find it a perfect winter hobby, building cozy creations indoors.</p>
-            <p>However, summer is also a popular time for outdoor Lego exhibitions and events.</p>
-            <figure>
-                <img src="images/building_legos_seasons_photorealistic.jpg" alt="Seasonal Lego building">
-                <figcaption>Building Lego sets during different seasons</figcaption>
-                <p><em>This image was generated using the prompt: "building legos in different seasons"</em></p>
-            </figure>
-        </section>
-
-        <!-- Where Section -->
-        <section id="where">
-            <h2>Where to Build Legos</h2>
-            <p>Lego building can be enjoyed anywhere, but many prefer a dedicated space like a table or playroom to keep pieces organized.</p>
-            <ul>
-                <li>Home</li>
-                <li>Community Centers</li>
-                <li>Lego Stores</li>
-            </ul>
-            <figure>
-                <img src="images/building_legos_community_center.jpg" alt="Lego building at a Community Center">
-                <figcaption>Example of a setup for Lego building</figcaption>
-                <p><em>This image was generated using the prompt: "photorealistic building legos at a community center"</em></p>
-            </figure>
-        </section>
-
-        <!-- How Section -->
-        <section id="how">
-            <h2>How to Build with Lego</h2>
-            <h3>Getting Started: Organize Your Space</h3>
-            <p>Before beginning a Lego project, it's helpful to have a designated space where you can comfortably work and keep your pieces organized. A table with small bins or trays is ideal, allowing you to sort pieces by color, size, or type for easy access.</p>
-        
-            <h3>Step 1: Choose Your Set or Build Idea</h3>
-            <p>If you're using a Lego set, start by carefully reviewing the instructions to familiarize yourself with the build process. For custom creations, sketch out your idea or gather inspiration from online communities to give your project a direction.</p>
-        
-            <figure>
-                <img src="images/building_legos_step_by_step.jpg" alt="Hands building a Lego structure">
-                <figcaption>Hands-on Lego building experience with organized pieces</figcaption>
-
-            </figure>
-        
-            <h3>Step 2: Build in Layers</h3>
-            <p>Building in layers is a common technique for larger structures. Start with the base, ensuring it’s strong and stable, then gradually work upwards. This method helps avoid instability and lets you focus on details layer by layer.</p>
-        
-            <h3>Step 3: Customize and Add Details</h3>
-            <p>Once the main structure is complete, customize your build by adding small details that bring it to life. Add textures, colors, and unique features to make your creation stand out.</p>
-        
-            <h3>Step 4: Display or Play!</h3>
-            <p>Once finished, decide if you want to display your build as a decoration or use it as part of a larger play setup. Many builders enjoy creating entire Lego worlds by combining different builds into one expansive scene.</p>
-        </section>
-        
-
-        <!-- Why Section -->
-        <section id="why">
-            <h2>Why Lego Building?</h2>
-            <p>Lego building enhances creativity, problem-solving, and fine motor skills. It's a fun, engaging hobby for all ages.</p>
-            <ul>
-                <li>Boosts creativity</li>
-                <li>Improves motor skills</li>
-                <li>Great stress-reliever</li>
-            </ul>
-            <figure>
-                <img src="images/why.jpg" alt="Benefits of Lego building">
-                <figcaption>Benefits of engaging in Lego building</figcaption>
-            </figure>
-        </section>
-
-        <!-- AI Prompts Section -->
-        <section id="ai-prompts">
-            <h2>AI Prompts Used</h2>
-            <ul>
-                <li>"Colorful Lego bricks arranged in a creative and fun way, with different shapes and sizes scattered on a table."</li>
-                <li>"Popular Lego building sets including castles, spaceships, and iconic architecture displayed creatively."</li>
-                <li>"Building Lego creations step by step, focusing on hands building a complex Lego structure."</li>
-            </ul>
-            <figure>
-                <img src="images/ai_legos.jpg" alt="AI-generated Lego image">
-                <figcaption>AI-generated representation of Lego building</figcaption>
-            </figure>
-        </section>
-    </main>
-
-    <footer>
-        <p>Designed by KIR Inc | <a href="https://www.yourdesignfirm.com" target="_blank" style="color:#fff;">www.yourdesignfirm.com</a></p>
-    </footer>
-
     <script>
         // JavaScript to show and hide sections based on navigation clicks
         function showSection(sectionId) {
@@ -205,6 +161,162 @@
             });
             document.getElementById(sectionId).classList.add('active');
         }
+        // Show default section on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('what');
+        });
     </script>
+</head>
+<body>
+    <header>
+        <h1>Legos and Building Sets</h1>
+        <nav>
+            <a href="#what" onclick="showSection('what')">What</a>
+            <a href="#who" onclick="showSection('who')">Who</a>
+            <a href="#when" onclick="showSection('when')">When</a>
+            <a href="#where" onclick="showSection('where')">Where</a>
+            <a href="#how" onclick="showSection('how')">How</a>
+            <a href="#why" onclick="showSection('why')">Why</a>
+            <a href="#ai" onclick="showSection('ai')">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- What Section (Home Page) -->
+        <section id="what" class="active">
+            <h2>What is Lego Building?</h2>
+            <p>Lego building is an engaging activity that allows individuals to construct models using interlocking plastic bricks. These bricks can be assembled and connected in myriad ways to build objects such as vehicles, buildings, and even functioning robots. The versatility of Lego bricks makes them a powerful tool for creativity and imagination.</p>
+            <p>With themed sets ranging from historical landmarks to popular movies, Lego offers something for everyone. Whether you're interested in architecture, engineering, storytelling, or just having fun, Lego building provides a platform to explore and develop these interests.</p>
+            <table>
+                <caption>Popular Lego Themes</caption>
+                <tr>
+                    <th>Theme</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>Urban life and infrastructure.</td>
+                </tr>
+                <tr>
+                    <td>Star Wars</td>
+                    <td>Sets based on the Star Wars universe.</td>
+                </tr>
+                <tr>
+                    <td>Technic</td>
+                    <td>Advanced models with complex mechanisms.</td>
+                </tr>
+            </table>
+            <figure>
+                <img src="images/lego_building.jpg" alt="Assorted Lego bricks in various colors and shapes">
+                <figcaption>Assorted Lego bricks ready for building</figcaption>
+            </figure>
+        </section>
+
+        <!-- Who Section -->
+        <section id="who">
+            <h2>Who Enjoys Lego Building?</h2>
+            <p>Lego building is a universal hobby enjoyed by people of all ages and backgrounds. From young children developing motor skills to adults seeking a creative outlet, Lego has a broad appeal.</p>
+            <ul>
+                <li><strong>Children:</strong> Enhances creativity, spatial awareness, and fine motor skills.</li>
+                <li><strong>Teens:</strong> Offers complex sets that challenge and engage, fostering problem-solving skills.</li>
+                <li><strong>Adults:</strong> Provides relaxation, nostalgia, and opportunities for intricate builds.</li>
+                <li><strong>Educators:</strong> Used as an educational tool in STEM learning environments.</li>
+            </ul>
+            <p>Lego clubs and events are popular among enthusiasts, providing opportunities to connect and share creations.</p>
+            <figure>
+                <img src="images/lego_family.jpg" alt="Lego family spending quality time">
+                <figcaption>Lego family spending quality time together</figcaption>
+            </figure>
+        </section>
+
+        <!-- When Section -->
+        <section id="when">
+            <h2>When to Enjoy Lego Building</h2>
+            <p>Lego building is a flexible hobby that fits into any schedule:</p>
+            <ul>
+                <li><strong>Leisure Time:</strong> Perfect for evenings and weekends to relax.</li>
+                <li><strong>Educational Settings:</strong> Incorporated into classroom activities year-round.</li>
+                <li><strong>Seasonal Events:</strong> Special Lego exhibitions and competitions often occur during holidays.</li>
+                <li><strong>Rainy Days:</strong> An ideal indoor activity when the weather isn't cooperative.</li>
+            </ul>
+            <p>Many families enjoy building Lego sets together during holidays, fostering bonding and teamwork.</p>
+            <figure>
+                <img src="images/christmas_lego.jpg" alt="Christmas Lego">
+                <figcaption>Lego building brings joy in every season</figcaption>
+            </figure>
+        </section>
+
+        <!-- Where Section -->
+        <section id="where">
+            <h2>Where to Build and Explore Lego</h2>
+            <p>Lego building can take place in various environments:</p>
+            <ul>
+                <li><strong>At Home:</strong> Create a personal workspace or play area.</li>
+                <li><strong>Lego Stores:</strong> Participate in build events and workshops.</li>
+                <li><strong>Community Centers:</strong> Join clubs and group activities.</li>
+                <li><strong>Online Communities:</strong> Share and collaborate virtually with enthusiasts worldwide.</li>
+                <li><strong>Educational Institutions:</strong> Engage in learning programs and robotics clubs.</li>
+            </ul>
+            <p>Some cities host Lego conventions where builders can showcase their creations.</p>
+            <figure>
+                <img src="images/lego_gathering.jpg" alt="Lego people gathering">
+                <figcaption>Lego people gathering for an event</figcaption>
+            </figure>
+        </section>
+
+        <!-- How Section -->
+        <section id="how">
+            <h2>How to Start Building with Lego</h2>
+            <h3>1. Gather Your Materials</h3>
+            <p>Start by collecting the necessary Lego sets or loose bricks. Decide if you want to follow a set or create your own design.</p>
+
+            <h3>2. Set Up Your Workspace</h3>
+            <p>Find a comfortable, well-lit area with enough space to spread out your pieces. Organize your bricks by color, size, or type to streamline the building process.</p>
+
+            <h3>3. Follow Instructions or Sketch Your Design</h3>
+            <p>If using a set, carefully follow the instruction manual. For custom builds, sketch your ideas or use digital tools like Lego Digital Designer to plan your creation.</p>
+
+            <figure>
+                <img src="images/kid_legos.jpg" alt="Kid starting to build with Lego">
+                <figcaption>Embarking on your Lego building journey</figcaption>
+            </figure>
+        </section>
+
+        <!-- Why Section -->
+        <section id="why">
+            <h2>Why Engage in Lego Building?</h2>
+            <p>Lego building is more than just assembling bricks; it's a way to develop valuable skills and enjoy numerous benefits:</p>
+            <ul>
+                <li><strong>Cognitive Development:</strong> Enhances problem-solving abilities and critical thinking.</li>
+                <li><strong>Creativity:</strong> Encourages imagination and innovation.</li>
+                <li><strong>Stress Relief:</strong> Acts as a therapeutic activity to unwind and relax.</li>
+                <li><strong>Social Interaction:</strong> Brings people together through collaborative building.</li>
+                <li><strong>Educational Value:</strong> Supports learning in mathematics, engineering, and technology.</li>
+            </ul>
+            <p>By engaging in Lego building, individuals can discover new passions and interests.</p>
+            <figure>
+                <img src="images/big_bang_lego.jpg" alt="Big Bang Legos on couch">
+                <figcaption>Lego building used for creativity and expressing interests</figcaption>
+            </figure>
+        </section>
+
+        <!-- AI Prompts Section -->
+        <section id="ai">
+            <h2>AI Prompts Used</h2>
+            <p>The following AI prompts were used to generate content for this website:</p>
+            <ul>
+                <li><strong>Popular Lego Themes Chart:</strong> "Create a table listing popular Lego themes with their descriptions."</li>
+                <li><strong>When to Enjoy Lego:</strong> "Write content about when people can enjoy Lego building, including leisure time, educational settings, and seasonal events."</li>
+                <li><strong>How to Start Building with Lego:</strong> "Provide a step-by-step guide on how to start building with Lego, including gathering materials, setting up a workspace, and following instructions."</li>
+                <li><strong>Lego Benefits:</strong> "Explain the benefits of Lego building, such as cognitive development, creativity, stress relief, social interaction, and educational value."</li>
+            </ul>
+            <p>All content was generated using OpenAI's GPT-4 model.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Designed by <a href="https://www.yourdesignfirm.com" target="_blank">KIR Inc</a></p>
+    </footer>
 </body>
 </html>
