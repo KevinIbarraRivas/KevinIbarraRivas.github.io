@@ -159,3 +159,17 @@ footer p {
 html {
     scroll-behavior: smooth;
 }
+
+@font-face {
+    font-family: 'Thunder';
+    src: url('../fonts/Thunder-BlackLC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.header-title {
+    font-family: 'Thunder', sans-serif;
+    font-size: 3.5rem;
+    color: #e1e1e1;
+    text-align: center;
+    margin: 20px 0;
+}
