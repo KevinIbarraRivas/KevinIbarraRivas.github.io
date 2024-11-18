@@ -151,4 +151,19 @@ footer {
 .project-card a i {
     margin-right: 8px;
 }
-    
+.project-card {
+    background-color: #3d3d3f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+html {
+    scroll-behavior: smooth;
+}
