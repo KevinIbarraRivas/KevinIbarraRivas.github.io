@@ -79,20 +79,20 @@
 <section class="photo-gallery">
     <h2>Photo Gallery</h2>
     <div class="gallery-grid">
-        <!-- Each image has a data attribute for the text -->
-        <img src="images/tim1.jpg" alt="TJ Looking up" data-text="Going to fish store" onclick="openModal(this)">
-        <img src="images/tim2.jpg" alt="TJ Gym" data-text="TJ Gym Rizz??" onclick="openModal(this)">
-        <img src="images/tim3.jpg" alt="TJ Mew" data-text="Getting Mogged!" onclick="openModal(this)">
-        <img src="images/tim4.png" alt="TJ in idk shirt" data-text="NPC Interaction" onclick="openModal(this)">
+        <img src="images/tim1.jpg" alt="TJ Looking up" data-text="Going to fish store" class="gallery-item">
+        <img src="images/tim2.jpg" alt="TJ Gym" data-text="TJ Gym Rizz??" class="gallery-item">
+        <img src="images/tim3.jpg" alt="TJ Mew" data-text="Getting Mogged!" class="gallery-item">
+        <img src="images/tim4.png" alt="TJ in idk shirt" data-text="NPC Interaction" class="gallery-item">
     </div>
 </section>
 
 <!-- Modal for Photos -->
 <div id="photo-modal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img id="modal-image" class="modal-content" src="" alt="Expanded Photo">
+    <span id="close-modal" class="close">&times;</span>
+    <img id="modal-image" class="modal-content" src="images/placeholder.jpg" alt="Expanded Photo">
     <p id="modal-text" class="modal-text"></p>
 </div>
+
 
     </main>
 

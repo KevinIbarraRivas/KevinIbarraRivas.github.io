@@ -204,20 +204,6 @@ html {
 .contact-form button:hover {
     background-color: #5c5c5f;
 }
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-}
-.gallery-grid img {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-.gallery-grid img:hover {
-    transform: scale(1.05);
-}
 /* Form Feedback Message */
 #form-message {
     margin-top: 10px;
@@ -266,8 +252,9 @@ html {
 }
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;    
 }
 .gallery-grid img {
     width: 100%;
@@ -279,7 +266,7 @@ html {
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
-/* Modal */
+/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -290,12 +277,21 @@ html {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content {
-    margin: 5% auto;
     display: block;
+    margin: 5% auto;
     max-width: 80%;
+    border-radius: 10px;
+}
+
+.modal-text {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
 }
 
 .close {
@@ -305,11 +301,4 @@ html {
     font-size: 30px;
     cursor: pointer;
     color: #fff;
-}
-
-.modal-text {
-    text-align: center;
-    color: #fff;
-    font-size: 1.2rem;
-    margin-top: 20px;
 }
