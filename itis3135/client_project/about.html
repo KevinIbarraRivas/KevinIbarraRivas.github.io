@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Tj - Dev Showcase</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Site Title -->
+    <header class="site-title">
+        <h1 class="header-title">TJ'S DEV SHOWCASE</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Coding Projects</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="work.html">Work Experience</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Title Section -->
+    <section class="page-title">
+        <h2>About Page</h2>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Resume Section -->
+        <section class="resume-section">
+            <h2>My Resume</h2>
+            <div class="resume-preview">
+                <a href="documents/TimothyGaither_Resume2024.pdf" target="_blank">
+                    <img src="images/TimothyPreview.jpg" alt="Resume Thumbnail" class="resume-thumbnail">
+                </a>
+            </div>
+            <a href="documents/TimothyGaither_Resume2024.pdf" download class="btn-download">Download Full Resume</a>
+        </section>
+
+        <!-- Personal Information Section -->
+        <section class="personal-info">
+            <h2>About Me</h2>
+            <p>Hello, I'm Timothy Gaither, a senior Computer Science student at UNC Charlotte with a passion for robotics and software development.</p>
+            <h3>Education</h3>
+            <p>University of North Carolina at Charlotte, B.S. in Computer Science, Robotics Concentration (Expected May 2025)</p>
+        </section>
+
+        <!-- Fun Facts Section -->
+        <section class="fun-facts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>I am fluent in English, Spanish, and Japanese.</li>
+                <li>I've been working on AI and robotics projects for the past 3 years.</li>
+                <li>My favorite manga is Berserk.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="https://formspree.io/f/xwpkqvzl" method="POST">
+                <label>Your Email:</label>
+                <input type="email" name="email" required>
+                <label>Your Message:</label>
+                <textarea name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="photo-gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/tim1.jpg" alt="Photo 1" onclick="openModal('images/tim1.jpg')">
+                <img src="images/tim2.jpg" alt="Photo 2" onclick="openModal('images/tim2.jpg')">
+                <img src="images/tim3.jpg" alt="Photo 3" onclick="openModal('images/tim3.jpg')">
+                <img src="images/tim4.png" alt="Photo 4" onclick="openModal('images/tim4.png')">
+            </div>
+        </section>
+
+        <!-- Modal for Photos -->
+        <div id="photoModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="modal-content" src="" alt="Expanded Photo">
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h4>Connect with Tj:</h4>
+        <div class="social-links">
+            <a href="https://github.com/Tim-Tim-Tim/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/timothy-gaither-185902226/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <p>Website designed by &copy; KIR Inc</p>
+    </footer>
+    <script src="scripts/gallery.js"></script>
+</body>
+</html>

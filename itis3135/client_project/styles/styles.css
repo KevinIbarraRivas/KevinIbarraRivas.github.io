@@ -173,3 +173,166 @@ html {
     text-align: center;
     margin: 20px 0;
 }
+/* About Page Styles */
+.resume-section, .personal-info, .fun-facts, .contact-form, .photo-gallery {
+    background-color: #3d3d3f;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.resume-section .btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6ac6f0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #6ac6f0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #5c5c5f;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Form Feedback Message */
+#form-message {
+    margin-top: 10px;
+    color: #6ac6f0;
+    font-style: italic;
+}
+/* Resume Section */
+.resume-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #3d3d3f;
+    border-radius: 10px;
+}
+
+.resume-preview {
+    margin-bottom: 20px;
+}
+
+.resume-thumbnail {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.resume-thumbnail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6ac6f0;
+    color: #e1e1e1;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #5c5c5f;
+}
+/* Photo Gallery */
+.photo-gallery {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
