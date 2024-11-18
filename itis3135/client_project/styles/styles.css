@@ -11,7 +11,6 @@ body {
     background-color: #1c1c1e;
     color: #e1e1e1;
     line-height: 1.6;
-    padding: 20px;
 }
 
 /* Navigation Bar */
@@ -40,12 +39,16 @@ nav ul li a:hover {
 }
 
 /* Banner Section */
-.banner img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
+.banner {
+    text-align: center;
     margin-bottom: 20px;
+}
+.profile-photo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Intro Section */
@@ -55,7 +58,6 @@ nav ul li a:hover {
 }
 .intro h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
 }
 .intro p {
     font-style: italic;
@@ -69,20 +71,14 @@ nav ul li a:hover {
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.featured-projects h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
 .project-card {
     background-color: #3d3d3f;
     padding: 15px;
-    border: 1px solid #555;
-    border-radius: 5px;
     margin-bottom: 15px;
+    border-radius: 5px;
 }
 .project-card a {
     color: #6ac6f0;
-    text-decoration: none;
 }
 
 /* Skills Section */
@@ -105,10 +101,54 @@ footer {
     background-color: #3d3d3f;
     padding: 10px;
     text-align: center;
-    color: #e1e1e1;
 }
 .social-links a {
     color: #6ac6f0;
     margin: 0 10px;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
 }
+.social-links a i {
+    margin-right: 5px;
+}
+.featured-projects {
+    background-color: #28282a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.featured-projects h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project-card {
+    background-color: #3d3d3f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+}
+.project-card h4 {
+    margin-bottom: 10px;
+    color: #6ac6f0;
+}
+.project-card p {
+    margin-bottom: 15px;
+}
+.project-card ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+.project-card a {
+    color: #6ac6f0;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.project-card a i {
+    margin-right: 8px;
+}
+    
