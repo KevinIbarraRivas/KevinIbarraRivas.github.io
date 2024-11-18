@@ -75,22 +75,25 @@
             </form>
         </section>
 
-        <!-- Photo Gallery Section -->
-        <section class="photo-gallery">
-            <h2>Photo Gallery</h2>
-            <div class="gallery-grid">
-                <img src="images/tim1.jpg" alt="Photo 1" onclick="openModal('images/tim1.jpg')">
-                <img src="images/tim2.jpg" alt="Photo 2" onclick="openModal('images/tim2.jpg')">
-                <img src="images/tim3.jpg" alt="Photo 3" onclick="openModal('images/tim3.jpg')">
-                <img src="images/tim4.png" alt="Photo 4" onclick="openModal('images/tim4.png')">
-            </div>
-        </section>
+<!-- Photo Gallery Section -->
+<section class="photo-gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery-grid">
+        <!-- Each image has a data attribute for the text -->
+        <img src="images/tim1.jpg" alt="TJ Looking up" data-text="Going to fish store" onclick="openModal(this)">
+        <img src="images/tim2.jpg" alt="TJ Gym" data-text="TJ Gym Rizz??" onclick="openModal(this)">
+        <img src="images/tim3.jpg" alt="TJ Mew" data-text="Getting Mogged!" onclick="openModal(this)">
+        <img src="images/tim4.png" alt="TJ in idk shirt" data-text="NPC Interaction" onclick="openModal(this)">
+    </div>
+</section>
 
-        <!-- Modal for Photos -->
-        <div id="photoModal" class="modal">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img id="modalImage" class="modal-content" src="" alt="Expanded Photo">
-        </div>
+<!-- Modal for Photos -->
+<div id="photo-modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-image" class="modal-content" src="" alt="Expanded Photo">
+    <p id="modal-text" class="modal-text"></p>
+</div>
+
     </main>
 
     <!-- Footer -->
