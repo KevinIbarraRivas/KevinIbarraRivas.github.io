@@ -7,13 +7,13 @@ html, body, ul, ol, h1, h2, h3, h4, p, img {
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #1c1c1e;
-    color: #e1e1e1;
+    background-color: #121212; /* Dark gray background */
+    color: #E0E0E0; /* Light gray text color */
     line-height: 1.6;
 }
 /* Navigation Bar */
 header {
-    background-color: #3d3d3f;
+    background-color: #1F1B24; /* Slightly lighter dark gray */
     padding: 15px;
     text-align: center;
 }
@@ -32,13 +32,13 @@ nav ul li {
     margin: 0 15px;
 }
 nav ul li a {
-    color: #e1e1e1;
+    color: #E0E0E0; /* Light gray text color */
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s;
 }
 nav ul li a:hover {
-    background-color: #5c5c5f;
+    background-color: #2D2A33; /* Hover background color */
     border-radius: 5px;
 }
 /* Banner Section */
@@ -51,7 +51,7 @@ nav ul li a:hover {
     max-width: 500px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(18, 18, 18, 0.5); /* Dark shadow */
 }
 /* Intro Section */
 .intro {
@@ -67,7 +67,7 @@ nav ul li a:hover {
 }
 /* Featured Projects Section */
 .featured-projects {
-    background-color: #28282a;
+    background-color: #1F1B24; /* Slightly lighter dark gray */
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 40px;
@@ -77,16 +77,16 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 .project-card {
-    background-color: #3d3d3f;
+    background-color: #2D2A33; /* Darker gray */
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    border: 1px solid #555;
+    border: 1px solid #3E3B47; /* Border color */
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .project-title {
     margin-bottom: 10px;
-    color: #6ac6f0;
+    color: #BB86FC; /* Purple accent color */
 }
 .project-card p {
     margin-bottom: 15px;
@@ -97,7 +97,7 @@ nav ul li a:hover {
     list-style-type: disc;
 }
 .project-card a {
-    color: #6ac6f0;
+    color: #BB86FC; /* Purple accent color */
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -108,11 +108,11 @@ nav ul li a:hover {
 }
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(18, 18, 18, 0.6); /* Darker shadow */
 }
 /* Skills Section */
 .skills {
-    background-color: #3d3d3f;
+    background-color: #2D2A33; /* Darker gray */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -126,7 +126,7 @@ nav ul li a:hover {
 }
 /* Footer */
 footer {
-    background-color: #3d3d3f;
+    background-color: #1F1B24; /* Slightly lighter dark gray */
     padding: 20px;
     text-align: center;
 }
@@ -134,7 +134,7 @@ footer {
     margin-bottom: 10px;
 }
 .social-links a {
-    color: #6ac6f0;
+    color: #03DAC6; /* Teal accent color */
     margin: 0 10px;
     text-decoration: none;
     display: inline-flex;
@@ -145,28 +145,30 @@ footer {
 }
 footer p {
     margin-top: 15px;
-    color: #aaa;
+    color: #A0A0A0; /* Medium gray text */
 }
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
 @font-face {
-    font-family: 'Thunder';
-    src: url('../fonts/Thunder-BlackLC.ttf') format('truetype');
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
     font-weight: normal;
     font-style: normal;
 }
+
 .header-title {
-    font-family: 'Thunder', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
-    color: #e1e1e1;
+    color: #BB86FC; /* Purple accent color */
     text-align: center;
     margin: 20px 0;
 }
+
 /* About Page Styles */
 .resume-section, .personal-info, .fun-facts, .contact-form, .photo-gallery {
-    background-color: #3d3d3f;
+    background-color: #1F1B24; /* Slightly lighter dark gray */
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
@@ -175,8 +177,8 @@ html {
 .resume-section .btn-download {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6ac6f0;
-    color: #fff;
+    background-color: #03DAC6; /* Teal accent color */
+    color: #121212; /* Dark background for contrast */
     text-decoration: none;
     border-radius: 5px;
 }
@@ -192,22 +194,27 @@ html {
     margin-bottom: 15px;
     border: none;
     border-radius: 5px;
+    background-color: #2D2A33; /* Input background */
+    color: #E0E0E0; /* Input text color */
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #A0A0A0; 
 }
 .contact-form button {
     padding: 10px;
-    background-color: #6ac6f0;
-    color: #fff;
+    background-color: #03DAC6; /* Teal accent color */
+    color: #121212; /* Dark text for contrast */
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 .contact-form button:hover {
-    background-color: #5c5c5f;
+    background-color: #018786; /* Darker teal on hover */
 }
 /* Form Feedback Message */
 #form-message {
     margin-top: 10px;
-    color: #6ac6f0;
+    color: #03DAC6; /* Teal accent color */
     font-style: italic;
 }
 /* Resume Section */
@@ -215,7 +222,7 @@ html {
     text-align: center;
     margin: 40px auto;
     padding: 20px;
-    background-color: #3d3d3f;
+    background-color: #1F1B24; /* Slightly lighter dark gray */
     border-radius: 10px;
 }
 .resume-preview {
@@ -225,25 +232,25 @@ html {
     width: 100%;
     max-width: 300px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(18, 18, 18, 0.5); /* Dark shadow */
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
 }
 .resume-thumbnail:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(18, 18, 18, 0.7); /* Darker shadow */
 }
 .btn-download {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #6ac6f0;
-    color: #e1e1e1;
+    background-color: #03DAC6; /* Teal accent color */
+    color: #121212; /* Dark text for contrast */
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 .btn-download:hover {
-    background-color: #5c5c5f;
+    background-color: #018786; /* Darker teal on hover */
 }
 .gallery-grid {
     display: grid;
@@ -263,8 +270,6 @@ html {
     transform: scale(1.05);
 }
 
-
-
 /* Modal Styles */
 .modal {
     display: none;
@@ -275,7 +280,7 @@ html {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(18, 18, 18, 0.95); /* Semi-transparent dark background */
     align-items: center;
     justify-content: center;
 }
@@ -289,7 +294,7 @@ html {
 
 .modal-text {
     text-align: center;
-    color: #fff;
+    color: #E0E0E0; /* Light text color */
     margin-top: 10px;
 }
 
@@ -299,7 +304,7 @@ html {
     right: 25px;
     font-size: 30px;
     cursor: pointer;
-    color: #fff;
+    color: #E0E0E0; /* Light text color */
 }
 .card-container {
     display: grid;
@@ -309,25 +314,25 @@ html {
 }
 
 .card {
-    background-color: #3d3d3f;
+    background-color: #2D2A33; /* Darker gray */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(18, 18, 18, 0.5); /* Dark shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-title {
-    color: #6ac6f0;
+    color: #BB86FC; /* Purple accent color */
     margin-bottom: 10px;
 }
 
 .card p {
-    color: #e1e1e1;
+    color: #E0E0E0; /* Light text color */
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(18, 18, 18, 0.7); /* Darker shadow */
 }
 .testimonial-image {
     width: 100%; 
@@ -336,13 +341,13 @@ html {
     border-radius: 50%;
     margin: 0 auto 10px; 
     display: block; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 8px rgba(18, 18, 18, 0.5); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testimonial-image:hover {
     transform: scale(1.1); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(18, 18, 18, 0.7);
 }
 .company-icon {
     width: 50px;
@@ -355,7 +360,7 @@ html {
     text-align: center;
     margin-top: 20px;
     font-style: italic;
-    color: #6ac6f0;
+    color: #03DAC6; /* Teal accent color */
 }
 .certification-icon {
     width: 80px; 
@@ -363,6 +368,5 @@ html {
     display: block;
     margin: 0 auto 10px; 
     border-radius: 5px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 6px rgba(18, 18, 18, 0.5);
 }
-
