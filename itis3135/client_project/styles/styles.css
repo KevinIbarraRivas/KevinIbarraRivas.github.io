@@ -344,4 +344,17 @@ html {
     transform: scale(1.1); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+.company-icon {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+.quirky-message {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #6ac6f0;
+}
 
