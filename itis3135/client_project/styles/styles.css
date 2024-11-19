@@ -255,7 +255,7 @@ html {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px; /* Simplified gap for both rows and columns */
+    grid-gap: 10px; 
 }
 
 .gallery-grid img {
