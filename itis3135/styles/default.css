@@ -18,7 +18,7 @@ header {
     text-align: center;
 }
 
-header h1 {
+.site-title { 
     margin: 0;
     font-size: 2em;
 }
@@ -59,7 +59,7 @@ section.main-section {
     margin: 20px 0;
 }
 
-section.main-section h3 {
+h3 { /* Unqualified h3 selector */
     font-size: 1.6em;
     color: #A51188;
     margin-bottom: 10px;
@@ -150,7 +150,7 @@ footer nav a:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    header h1 {
+    .site-title { 
         font-size: 1.5em;
     }
 
