@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIR Inc | Your Trusted Design Partner</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+        :root {
+            --primary-color: 	#5f5558;
+            --secondary-color: 	#2c2728; 
+            --background-color: #dddddd; 
+            --text-color: #333333; 
+            --font-family: 'Arial', sans-serif;
+            --max-width: 1200px;
+            --transition-speed: 0.3s;
+            --header-font: 'Montserrat', sans-serif;
+        }
+
+        
+        body {
+            background-color: var(--background-color);
+            font-family: var(--font-family);
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+       
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centered content */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-family: var(--header-font); /* Apply cool font to header */
+        }
+
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        
+        main {
+            max-width: var(--max-width);
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        main .text {
+            color: var(--secondary-color);
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            margin-bottom: 20px;
+        }
+
+       
+        .custom-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .custom-list li {
+            background-image: url('https://openclipart.org/image/400px/3261'); /* Example custom bullet */
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: 0 5px;
+            padding-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            background-color: #ffffff;
+            padding: 20px;
+            border-left: 5px solid var(--secondary-color);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            margin-top: 0;
+            color: var(--secondary-color);
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        footer a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color var(--transition-speed);
+        }
+
+        footer a:hover {
+            color: var(--link-hover-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                margin-bottom: 10px;
+            }
+
+            .custom-list li {
+                padding-left: 35px;
+                background-size: 15px 15px;
+                background-position: 0 6px;
+            }
+        }
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://openclipart.org/image/400px/133789" alt="KIR Inc Logo">
+            <h1>KIR Inc</h1>
+        </div>
+    </header>
+
+    <main>
+        <h2>Our Services</h2>
+        <p>At <strong>KIR Inc</strong>, we specialize in providing top-notch web development and design solutions tailored to meet your unique business needs. Our team of experts is dedicated to delivering innovative and effective strategies that help your brand stand out in the digital landscape.</p>
+        
+        <ul class="custom-list">
+            <li>Customized Web Design</li>
+            <li>Responsive Development</li>
+            <li>SEO Optimization</li>
+            <li>eCommerce Solutions</li>
+            <li>Content Management Systems</li>
+            <li>Brand Identity Creation</li>
+            <li>Supporting Advisors</li>
+            <li>Maintenance and Support</li>
+        </ul>
+        
+        <p>We are committed to helping our clients achieve their digital goals through strategic planning, creative design, and technical expertise. Whether you're looking to build a new website from scratch or revamp your existing online presence, <strong>KIR Inc</strong> is here to assist you every step of the way.</p>
+        
+        <div class="contact-info">
+            <h3>Contact Us!</h3>
+            <p><strong>Email:</strong> support@kirinc.co</p>
+            <p><strong>Phone:</strong> (980) 422 1339 </p>
+            <p><strong>Address:</strong> 8813 Gamer Rd</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 KIR Inc. All rights reserved.</p>
+        <p><em>"Innovate. Design. Deliver."</em></p>
+    </footer>
+</body>
+</html>
