@@ -147,6 +147,9 @@ footer nav a {
 footer nav a:hover {
     color: #A51188;
 }
+.foot-link{
+    color: #F5A7B3;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
