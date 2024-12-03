@@ -13,6 +13,7 @@
     --max-width: 1200px;
     --transition-speed: 0.3s;
     --font-family: 'Gill Sans', sans-serif;
+    --main-link-hover-color: #800080;
 }
 
 /* General Body Styling */
@@ -126,6 +127,11 @@ h2 {
     border-left: 4px solid var(--primary-color);
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+main a:hover {
+    color: var(--main-link-hover-color);
+    
+    text-decoration: underline; 
 }
 
 /* Background List Styling */
