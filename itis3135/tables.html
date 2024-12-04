@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kevin Rivas's Kind Rat || ITIS 3135 Tables</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <!-- Deferred script loading for better performance -->
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Include your header content -->
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <section class="main-section">
+            <h2>Activity 2 - HTML Tables</h2>
+            <!-- Ordered List of Employees -->
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>Timothy Gaither - tmthygaith@timtopinc.com - 5 years</li>
+                <li>Anissa Mauri - anissaAmauri@kirinc.co - 5 years</li>
+                <li>Cole Howard - choward@gmail.com - 10 years</li>
+                <li>William Bates - mbates@aol.com - 11 years</li>
+                <li>Ben Dover - benjamindoverman@professionalcompany.com - 3 years</li>
+                <li>Anita Pea - athenapearch@apple.com - 4 years</li>
+                <li>Chris Pratt - chrissypratt@kirinc.co - 6 years</li>
+                <li>Sam Sulek - samanthasuleka@professionalcompany.com - 2 years</li>
+            </ol>
+
+            <!-- Simple Table -->
+            <h3>Employee Data in Simple Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Years of Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Timothy Gaither</td>
+                        <td>tmthygaith@timtopinc.com</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Anissa Mauri</td>
+                        <td>anissaAmauri@kirinc.co</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Cole Howard</td>
+                        <td>choward@gmail.com</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>William Bates</td>
+                        <td>mbates@aol.com</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>Ben Dover</td>
+                        <td>benjamindoverman@professionalcompany.com</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Anita Pea</td>
+                        <td>athenapearch@apple.com</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Chris Pratt</td>
+                        <td>chrissypratt@kirinc.co</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Sam Sulek</td>
+                        <td>samanthasuleka@professionalcompany.com</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+         
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+                <figcaption><strong>Employee Information</strong></figcaption>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Years of Service</th>
+                            <th scope="col">Monthly Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                     
+                        <tr>
+                            <td rowspan="2">Management</td>
+                            <td>Timothy Gaither</td>
+                            <td>tmthygaith@timtopinc.com</td>
+                            <td>5</td>
+                            <td>$6,000</td>
+                        </tr>
+                        <tr>
+                            <td>William Bates</td>
+                            <td>mbates@aol.com</td>
+                            <td>11</td>
+                            <td>$7,500</td>
+                        </tr>
+                       
+                        <tr>
+                            <td rowspan="3">Development</td>
+                            <td>Anissa Mauri</td>
+                            <td>anissaAmauri@kirinc.co</td>
+                            <td>5</td>
+                            <td>$10,000</td>
+                        </tr>
+                        <tr>
+                            <td>Cole Howard</td>
+                            <td>choward@gmail.com</td>
+                            <td>10</td>
+                            <td>$6,800</td>
+                        </tr>
+                        <tr>
+                            <td>Anita Pea</td>
+                            <td>athenapearch@apple.com</td>
+                            <td>4</td>
+                            <td>$5,200</td>
+                        </tr>
+                     
+                        <tr>
+                            <td rowspan="3">Marketing</td>
+                            <td>Ben Dover</td>
+                            <td>benjamindoverman@professionalcompany.com</td>
+                            <td>3</td>
+                            <td>$4,500</td>
+                        </tr>
+                        <tr>
+                            <td>Chris Pratt</td>
+                            <td>chrissypratt@kirinc.co</td>
+                            <td>6</td>
+                            <td>$5,000</td>
+                        </tr>
+                        <tr>
+                            <td>Sam Sulek</td>
+                            <td>samanthasuleka@professionalcompany.com</td>
+                            <td>2</td>
+                            <td>$4,200</td>
+                        </tr>
+                    </tbody>
+                    
+                    <tfoot>
+                        <tr>
+                            <th colspan="3">Total Years of Service</th>
+                            <td>46</td>
+                            <td>$49,100</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        
+        <div data-include="components/footer.html"></div>
+    </footer>
+   
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
