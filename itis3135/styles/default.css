@@ -1,9 +1,9 @@
-/* CSS Variables for Consistent Styling */
+/* CSS Variables */
 :root {
-    --primary-color: #A51188;
+    --primary-color: #A51188; 
     --highlight-color: #20B2AA;
     --important-color: #A51188;
-    --link-color: #F5A7B3;
+    --link-color: #F5A7B3;    
     --link-hover-color: #FFFFFF;
     --header-bg-color: #333333;
     --footer-bg-color: #333333;
@@ -14,8 +14,17 @@
     --transition-speed: 0.3s;
     --font-family: 'Gill Sans', sans-serif;
     --main-link-hover-color: #800080;
+    --button-bg-color: #4B0082;  
+    --button-text-color: #FFC0CB;
+    --input-bg-color: #360062;
+    --input-text-color: var(--button-text-color);
+    --button-bg-color-alt: #800080; /* New variable for alternating button color */
 }
 
+/* Base font size for responsive typography */
+html {
+    font-size: 16px;
+}
 
 body {
     background-color: var(--body-bg-color);
@@ -26,23 +35,24 @@ body {
     color: var(--text-color);
 }
 
-
+/* Header Styling */
 header {
     background-color: var(--header-bg-color);
     color: var(--footer-text-color);
     padding: 20px;
+    box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 .site-title {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-
+/* Navigation Styling */
 .main-nav ul {
     list-style: none;
     padding: 0;
@@ -60,7 +70,7 @@ header {
     color: var(--link-color);
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     position: relative;
     padding: 5px 0;
     transition: color var(--transition-speed);
@@ -83,203 +93,219 @@ header {
     width: 100%;
 }
 
-
+/* Main Content Styling */
 main {
     max-width: var(--max-width);
-    margin: 40px auto;
+    width: 90%;
+    margin: 20px auto; /* Added top margin for spacing */
     padding: 40px 20px;
     background-color: #FFFFFF;
     border-radius: 10px;
+    box-sizing: border-box;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.main-section {
+.home-section {
     margin-bottom: 40px;
+    text-align: center; /* Center the content */
 }
 
+.main-section {
+    padding: 20px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+/* Typography */
 h2 {
     color: var(--primary-color);
-    font-size: 2em;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     margin-bottom: 20px;
     text-align: center;
 }
 
 h3 {
     color: var(--important-color);
-    font-size: 1.5em;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 
-
-ol {
-    margin-left: 20px;
-    margin-bottom: 30px;
-}
-
-ol li {
+h4 {
+    margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 1.1em;
 }
 
+p {
+    margin-bottom: 15px;
+}
 
-table {
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: 20px auto; /* Added top margin for spacing */
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"]:not(.fixed-width-input),
+select {
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 30px;
-}
-
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-thead th {
-    background-color: #444444;
-    color: #ffffff;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #ffffff;
-}
-
-tfoot th {
-    background-color: #333333;
-    color: #ffffff;
-    text-align: right;
-}
-
-tfoot td {
-    background-color: #333333;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-
-figure {
-    margin: 0;
-}
-
-figcaption {
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-
-a {
-    color: var(--link-color);
-    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #cccccc;
+    border-radius: 4px;
     font-size: 1em;
-    transition: color var(--transition-speed);
-}
-
-a:hover {
-    color: var(--link-hover-color);
-    text-decoration: underline;
+    color: var(--input-text-color);       
+    background-color: var(--input-bg-color); 
+    box-sizing: border-box;
 }
 
 
-main a:hover {
-    color: var(--main-link-hover-color);
-    text-decoration: underline;
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(165, 17, 136, 0.5);
+    background-color: var(--input-bg-color); 
 }
 
+::placeholder {
+    color: var(--button-text-color);
+}
 
+/* Buttons */
+button {
+    background-color: var(--button-bg-color); 
+    color: var(--button-text-color);          
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px 5px 0 0;
+    transition: background-color var(--transition-speed);
+}
+
+button:hover {
+    background-color: #360062;
+}
+
+/* Alternate Button Colors */
+.buttons-container button:nth-of-type(even) {
+    background-color: var(--button-bg-color-alt);
+}
+
+.buttons-container button:nth-of-type(even):hover {
+    background-color: #5a005a;
+}
+
+/* Greeting and Result Messages */
+#greeting-message,
+#polygon-result,
+#rat-age-result {
+    font-size: 1.2em;
+    color: var(--highlight-color);
+    margin-top: 20px;
+    text-align: center;
+    white-space: pre-line; /* Preserve line breaks */
+}
+
+/* Article Styling */
+article {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.article-title {
+    margin-top: 0;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article:hover {
+    background-color: #eaeaea;
+    border-color: #ccc;
+}
+
+/* Footer Styling */
 footer {
     background-color: var(--footer-bg-color);
     color: var(--footer-text-color);
     padding: 20px;
+    box-sizing: border-box;
     margin-top: 40px;
     text-align: center;
 }
 
-.tagline {
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-.footer-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 15px 0;
+/* Buttons Container */
+.buttons-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.footer-nav li {
-    margin: 0 15px;
-}
-
-.footer-nav a {
-    color: var(--link-color);
-    text-decoration: none;
-    font-size: 1em;
-    transition: color var(--transition-speed);
-}
-
-.footer-nav a:hover {
-    color: var(--link-hover-color);
-}
-
-.designed-by {
-    font-size: 0.9em;
-    color: #CCCCCC;
-}
-
-.designed-by a.foot-link {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: color var(--transition-speed);
-}
-
-.designed-by a.foot-link:hover {
-    color: var(--link-hover-color);
+.buttons-container button {
+    margin: 10px;
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .site-title {
-        font-size: 2em;
-    }
-
-    .main-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-nav li {
-        margin: 10px 0;
-    }
-
-    .footer-nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-nav li {
-        margin: 10px 0;
+        font-size: 2rem;
     }
 
     main {
         padding: 30px 15px;
     }
+}
 
-    figure img {
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .site-title {
+        font-size: 1.8rem;
     }
 
-    .background-list {
-        padding-left: 0;
+    main {
+        padding: 20px 10px;
     }
 
-    .background-list ul {
-        padding-left: 20px;
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        max-width: 100%;
     }
+}
+
+.fixed-width-input {
+    width: 100px; 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1em;
+    color: var(--input-text-color);       
+    background-color: var(--input-bg-color); 
+    box-sizing: border-box;
+
 }
