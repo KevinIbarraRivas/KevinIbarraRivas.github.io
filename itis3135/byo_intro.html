@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kevin Rivas's Kind Rat || ITIS 3135 BYO Intro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <section class="main-section">
+            <h2>BYO Intro</h2>
+            <p>Please fill out the form below to create your personalized introduction page.</p>
+            
+            <form id="intro-form">
+                <label for="name">Name (required):</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="mascot">Mascot (required):</label>
+                <input type="text" id="mascot" name="mascot" required>
+
+                <label for="image">Image (required, PNG/JPG):</label>
+                <input type="file" id="image" name="image" accept="image/jpeg,image/png" required>
+
+                <label for="image-caption">Image Caption (required):</label>
+                <input type="text" id="image-caption" name="image-caption" required>
+
+                <label for="personal-background">Personal Background (required):</label>
+                <textarea id="personal-background" name="personal-background" required></textarea>
+
+                <label for="professional-background">Professional Background (required):</label>
+                <textarea id="professional-background" name="professional-background" required></textarea>
+
+                <label for="academic-background">Academic Background (required):</label>
+                <textarea id="academic-background" name="academic-background" required></textarea>
+
+                <label for="web-development">Background in Web Development (required):</label>
+                <textarea id="web-development" name="web-development" required></textarea>
+
+                <label for="platform">Primary Computer Platform (required):</label>
+                <input type="text" id="platform" name="platform" required>
+
+                <label>Courses currently taking (at least one):</label>
+                <div id="courses-container">
+                    <input type="text" name="course[]" placeholder="Course 1" required>
+                </div>
+                <button type="button" id="add-course-button">Add Course</button>
+
+                <label for="funny-thing">Funny thing?</label>
+                <input type="text" id="funny-thing" name="funny-thing">
+
+                <label for="other-info">Anything else?</label>
+                <input type="text" id="other-info" name="other-info">
+
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset" id="reset-button">Reset</button>
+                </div>
+            </form>
+
+            <div id="result" class="hidden">
+                <article>
+                    <h2>Your Introduction</h2>
+                    <figure>
+                        <img id="result-image" alt="User Image">
+                        <figcaption id="result-image-caption"></figcaption>
+                    </figure>
+                    <ul>
+                        <li><strong>Name:</strong> <span id="result-name"></span></li>
+                        <li><strong>Mascot:</strong> <span id="result-mascot"></span></li>
+                        <li><strong>Personal Background:</strong> <span id="result-personal-background"></span></li>
+                        <li><strong>Professional Background:</strong> <span id="result-professional-background"></span></li>
+                        <li><strong>Academic Background:</strong> <span id="result-academic-background"></span></li>
+                        <li><strong>Background in Web Development:</strong> <span id="result-web-development"></span></li>
+                        <li><strong>Primary Computer Platform:</strong> <span id="result-platform"></span></li>
+                        <li><strong>Courses currently taking:</strong> <span id="result-courses"></span></li>
+                        <li><strong>Funny Thing:</strong> <span id="result-funny-thing"></span></li>
+                        <li><strong>Anything Else?</strong> <span id="result-other-info"></span></li>
+                    </ul>
+                    <a href="#" id="reset-results-link">Reset and Fill Form Again</a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js" defer></script>
+</body>
+</html>

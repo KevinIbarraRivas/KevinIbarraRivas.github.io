@@ -18,7 +18,7 @@
     --button-text-color: #FFC0CB;
     --input-bg-color: #360062;
     --input-text-color: var(--button-text-color);
-    --button-bg-color-alt: #800080; /* New variable for alternating button color */
+    --button-bg-color-alt: #800080; 
 }
 
 /* Base font size for responsive typography */
@@ -97,7 +97,7 @@ header {
 main {
     max-width: var(--max-width);
     width: 90%;
-    margin: 20px auto; /* Added top margin for spacing */
+    margin: 20px auto; 
     padding: 40px 20px;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -107,7 +107,7 @@ main {
 
 .home-section {
     margin-bottom: 40px;
-    text-align: center; /* Center the content */
+    text-align: center; 
 }
 
 .main-section {
@@ -143,8 +143,8 @@ p {
 /* Form Styling */
 form {
     max-width: 600px;
-    margin: 20px auto; /* Added top margin for spacing */
-    text-align: left; /* Align labels and inputs to the left */
+    margin: 20px auto; 
+    text-align: left; 
 }
 
 label {
@@ -168,7 +168,6 @@ select {
     background-color: var(--input-bg-color); 
     box-sizing: border-box;
 }
-
 
 input[type="text"]:focus,
 input[type="tel"]:focus,
@@ -219,7 +218,7 @@ button:hover {
     color: var(--highlight-color);
     margin-top: 20px;
     text-align: center;
-    white-space: pre-line; /* Preserve line breaks */
+    white-space: pre-line;
 }
 
 /* Article Styling */
@@ -254,6 +253,62 @@ footer {
     box-sizing: border-box;
     margin-top: 40px;
     text-align: center;
+}
+
+footer .tagline {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer .footer-nav {
+    margin-bottom: 15px;
+}
+
+footer .footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-nav li {
+    margin: 0 10px;
+}
+
+footer .footer-nav a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+footer .footer-nav a:hover {
+    color: var(--highlight-color);
+}
+
+footer .designed-by {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+footer .foot-link {
+    color: var(--link-color);
+    text-decoration: underline;
+    transition: color var(--transition-speed);
+}
+
+footer .foot-link:hover {
+    color: var(--link-hover-color);
+}
+
+/* Image Styling */
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto;
 }
 
 /* Buttons Container */
@@ -307,5 +362,8 @@ footer {
     color: var(--input-text-color);       
     background-color: var(--input-bg-color); 
     box-sizing: border-box;
+}
 
+.hidden {
+    display: none;
 }

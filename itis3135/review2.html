@@ -8,28 +8,14 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
-        <h1>Webpage Evaluation || ITIS 3135</h1>
-        <nav>
-            <a href="./">Home</a> ||
-            <a href="introduction.html">Introduction</a> ||
-            <a href="contract.html">Contract</a>\\
-            <li><a href="about.html" class="menu-item">About</a></li> ||
-            <a href="client_overview.html">Client Project Overview</a> ||
-            <a href="hobby/index.html">Hobby</a> ||
-            <a href="client_project/index.html">Client Project</a> ||
-            <a href="review1.html">Review 1</a> ||
-            <a href="review2.html">Review 2</a>
-        </nav>
+        <div data-include="components/header.html"></div>
     </header>
 
-    <!-- Main Content Section -->
     <main>
         <h2>Peer Review 2</h2>
         <h3>Zack Willis</h3>
 
-        <!-- Screenshot with Link -->
         <figure>
             <a href="https://webpages.charlotte.edu/zwillis/tonis-skincare/index.html" target="_blank">
                 <img src="images/zackWillWeb.png" alt="Screenshot of Zack Willis's Website">
@@ -37,7 +23,6 @@
             <figcaption>Screenshot of the evaluated site. Click to visit.</figcaption>
         </figure>
 
-        <!-- Evaluation Checklist -->
         <h3>Check List For Page</h3>
         <ul>
             <li><strong>Homepage:</strong> Homepage is <code>index.html</code></li>
@@ -77,15 +62,9 @@
         </ul>
     </main>
 
-    <!-- Footer Section -->
     <footer>
-        <nav>
-            <a href="https://webpages.charlotte.edu/">Charlotte.edu</a> ||
-            <a href="https://github.com/">GitHub</a> ||
-            <a href="https://freecodecamp.org/">freeCodeCamp</a> ||
-            <a href="https://codecademy.com/">Codecademy</a> ||
-            <a href="https://www.linkedin.com/">LinkedIn</a>
-        </nav>
+        <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
