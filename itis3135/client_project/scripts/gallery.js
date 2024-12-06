@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     closeModal.addEventListener('click', () => {
         modal.style.display = 'none';
-        modalImage.src = ''; // Clear src to avoid empty attribute error
+        modalImage.src = ''; 
     });
 
     /**
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             modal.style.display = 'none';
-            modalImage.src = ''; // Clear src to avoid empty attribute error
+            modalImage.src = ''; 
         }
     });
 });
